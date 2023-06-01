@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="index.js">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <title>Portfolio website</title>
+</head>
+
+<body>
+    <!---Cabeçalho-Main-->
+    <header>
+        <div class="background">
+            <nav>
+                <img src="img/Screenshot_20230528-030001-removebg-preview.png" alt="" width="95px">
+                <!--Logo-->
+                <ul class="cabeçalho-link">
+                    <li><a href="#index.html">Inicio</a></li>
+                    <li><a href="#sobre-mim">Sobre mim</a></li>
+                    <li><a href="#trabalhos">Trabalhos</a></li>
+                    <li><a href="#contatos">Contato</a></li>
+                </ul>
+                <!--cabeçalho-link-->
+
+
+
+                <div class="dark">
+                    <button onclick="darkMode()" class="btn-dark"><span class="material-symbols-outlined">
+                            <i class="fa-sharp fa-solid fa-moon" style="color: #000000;"></i>
+                        </span></button>
+
+                    <button onclick="lightMode()" class="btn-dark"><span class="material-symbols-outlined">
+                            <i class="fa-sharp fa-solid fa-sun" style="color: #000000;"></i>
+                        </span>
+                    </button>
+                </div>
+            </nav>
+
+            <script>
+                function darkMode() {
+                    var element = document.body;
+                    var content = document.getElementById("DarkModetext");
+                    element.className = "dark-mode";
+                    content.innerText = "Dark Mode is ON";
+                }
+                function lightMode() {
+                    var element = document.body;
+                    var content = document.getElementById("DarkModetext");
+                    element.className = "light-mode";
+                    content.innerText = "Dark Mode is OFF";
+                }
+            </script>
+
+            <div class="Main">
+                <h4>Ola, meu nome é</h4>
+                <h1>Nathan <span>Vargas Pastusak</span></h1>
+                <h3>Eu sou aluno de Programação Web Full Stack</h3>
+                <div class="Container-btn">
+                    <form>
+
+                        <input type="submit" name="submit" value="">
+                    </form>
+                </div>
+                <!--Container-btn-->
+            </div>
+            <!--Main-->
+    </header>
+    </div>
+
+
+
+
+
+    <section class="background">
+        <div class="main-sobre">
+            <img src="img/this-is-sparta-removebg-preview.png">
+            <div class="Text-sobre">
+
+                <h2 id="sobre-mim">Sobre-Mim</h2>
+                <h5><span>Boa Tarde, eu sou </span>Nathan Vargas P.L.</h5>
+                <p>Boa tarde, eu me chamo Nathan Vargas e eu tenho 18 anos, sou de <span>Porto Alegre</span> e estudo
+                    Programação Web no <span>Instituto IOS</span> , também estudo Administração na <span>Rede
+                        Marista.</span> Desde de pequeno, amo aprender coisas novas, então sempre encarei novos desafios
+                    para poder evoluir.<span> Eu acredito em duas coisas:</span> a primeira é que se você tem um
+                    objetivo na vida, tem que correr atrás, acredito que nada na vida pode ser conquistado sem
+                    dedicação, persistência e esforço. Então, é por esse exato motivo que eu me dedico ao máximo em tudo
+                    que faço. A segunda é que para alcançar o sucesso na vida, devemos encarar os desafios de cabeça
+                    erguida e que somente assim vamos vencer.</p>
+                <div class="taxi-drive"></div>
+                <!--Button-->
+            </div>
+            <!--Text-sobre-->
+        </div>
+        <!--main-sobre-->
+    </section>
+
+    <div class="background" data-aos="flip-left">
+        <div class="title">
+            <h2 id="trabalhos">Trabalhos</h2>
+
+
+
+        </div>
+        <!--title-->
+
+        <div class="Caixa" data-aos="fade-right">
+            <div class="Card">
+                <h5><span class="simbolo">&Omega;</span></h5>
+                <h5>Trabalho 1</h5>
+                <h4>Fake<span> News</span></h4>
+                <div class="Paragrafo-button">
+                    <p>Este foi o meu primeiro site que criei, ainda estava engatinhando no mundo da <span>Programação
+                            Web</span>. Mas para o primeiro site, não está tão mal assim. Mas umas melhorias seriam
+                        boas!</p>
+                    <button type="button"><a href="https://nathanvplemos.github.io/Fake-News/">Acessar Link do
+                            Trabalho</a></button>
+                    <!--button-->
+                </div>
+
+            </div>
+            <!--Card-->
+
+            <div class="Card">
+                <h5><span class="simbolo">&Omega;</span></h5>
+                <h5>Trabalho 2</h5>
+                <h4>Elon <span>Musk</span></h4>
+                <div class="Paragrafo-button">
+                    <p>Meus <span>segundo site</span>, mostra um evolução que é até consideravel vai. Mas, ainda não é
+                        um dos melhores.</p>
+                    <br>
+                    <button type="button"><a href="https://nathanvplemos.github.io/Elon-Musk/">Acessar Link do
+                            Trabalho</a></button>
+                    <!--button-->
+                </div>
+                <!--Paragrafo-button-->
+            </div>
+            <!--Card-->
+
+            <div class="Card">
+                <h5><span class="simbolo">&Omega;</span></h5>
+                <h5>Trabalho 3</h5>
+                <h4>Efeito<span> Parallax</span></h4>
+                <div class="Paragrafo-button">
+                    <p>No meu <span>terceiro site</span>, mostra um evolução muito grande. Esse é sem dúvida uns dos
+                        meus trabalhos favoritos!</p>
+                    <br>
+                    <button type="button"><a href="https://nathanvplemos.github.io/winter/">Acessar Link do
+                            Trabalho</a></button>
+                    <!--button-->
+                </div>
+                <!--Paragrafo-button-->
+            </div>
+            <!--Card-->
+
+            <div class="Card">
+                <h5><span class="simbolo">&Omega;</span></h5>
+                <h5>Trabalho 4</h5>
+                <h4>Carrocel<span> 3D</span></h4>
+
+                <div class="Paragrafo-button">
+                    <p>Por mais que seja simples, foi com esse trabalho que fiz minha<span> primeira animação </span>o
+                        que para mim, é uma grande evolução.</p>
+                    <br>
+                    <button type="button"><a href="https://nathanvplemos.github.io/carroCel3D/">Acessar Link do
+                            Trabalho</a></button>
+                    <!--button-->
+                </div>
+
+
+
+
+                <!--Paragrafo-button-->
+            </div>
+            <!--Card-->
+
+            <div class="Card">
+                <h5><span class="simbolo">&Omega;</span></h5>
+                <h5>Trabalho 5</h5>
+
+                <h4>Galeria de <span>Cidades</span></h4>
+
+                <div class="Paragrafo-button">
+                    <p>Sem dúvida, <span>um dos meus site mais lindos</span>, não só pelos os efeitos mais pela
+                        estilização.</p>
+                    <br><br>
+                    <button type="button"><a href="https://nathanvplemos.github.io/Flex-egrid/">Acessar Link do
+                            Trabalho</a></button>
+                    <!--button-->
+                </div>
+                <!--Paragrafo-button-->
+            </div>
+            <!--Card-->
+
+            <div class="Card">
+                <h5><span class="simbolo">&Omega;</span></h5>
+                <h5>Trabalho 6</h5>
+
+                <h4>Calculadora<span> IMC</span></h4>
+                <div class="Paragrafo-button">
+                    <p>Esse foi meu <span>primeiro trabalho feito com Java Script</span>. É sem duvida um dos mais
+                        legais que já fiz!</p>
+                    <br><br>
+                    <button type="button"><a href="https://nathanvplemos.github.io/pacman-pixel/">Acessar Link do
+                            Trabalho</a></button>
+                    <!--button-->
+                </div>
+                <!--Paragrafo-button-->
+            </div>
+            <!--Card-->
+
+            <div class="Card">
+                <h5><span class="simbolo">&Omega;</span></h5>
+                <h5>Trabalho 7</h5>
+
+                <h4>O <span>Temporizador</span></h4>
+                <div class="Paragrafo-button">
+                    <p>Assim como o anterior, também usei <span>Java Script</span> neste trabalho, gosto muito dele e
+                        adoroa sua estetica de Matrix.</p>
+                    <br>
+                    <button type="button"><a href="https://nathanvplemos.github.io/Temporizador/">Acessar Link do
+                            Trabalho</a></button>
+                    <!--button-->
+                </div>
+                <!--Paragrafo-button-->
+            </div>
+            <!--Card-->
+
+            <div class="Card">
+                <h5><span class="simbolo">&Omega;</span></h5>
+                <h5>Trabalho 8</h5>
+                <h4>Preconceito de <span>Classes</span></h4>
+
+                <div class="Paragrafo-button">
+                    <p>Um dos meus primeiros trabalhos em <span>Grupo</span>. Além das informações é extremamente
+                        bonito.</p>
+                    <br><br>
+                    <button type="button"> <a href="https://nathanvplemos.github.io/Preconceito-de-Classe/">Acessar Link
+                            do
+                            Trabalho</a></button>
+                    <!--button-->
+                </div>
+                <!--Paragrafo-button-->
+            </div>
+            <!--Card-->
+
+            <div class="Card">
+                <h5><span class="simbolo">&Omega;</span></h5>
+
+                <h5> Trabalho 9</h5>
+
+                <h4>Peaky <span>Blinders</span></h4>
+                <div class="Paragrafo-button">
+                    <p>Por que sejá simples esse também é um dos meus primeiros trabalhos com animação, além de
+                        homenagear umas das minhas séries favoritas!</p>
+                    <br>
+                    <button type="button"><a href="https://nathanvplemos.github.io/Peaky-Blinders-Thommy/">Acessar Link
+                            do
+                            Trabalho</a></button>
+                    <!--button-->
+                </div>
+                <!--Paragrafo-button-->
+            </div>
+            <!--Card-->
+
+        </div>
+        <!--Caixa-->
+    </div>
+    <!--Conatiner-serviços-->
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <!--Rodapé--->
+    <footer>
+
+        <footer class="main_footer container">
+            <br>
+            <h2 id="contatos">Nathan Vargas Pastusak</h2>
+            <div class="content">
+                <div class="colfooter" id="contatos">
+
+
+                    <h3 class="titleFooter">Menu</h3>
+                    <br><br>
+                    <ul>
+
+                        <li><a href="index.html" title="inicio">Página Inícial</a></li>
+                        <br>
+                        <li><a href="#sobre-mim" title="sobre mim">Sobre Mim</a></li>
+                        <br>
+                        <li><a href="#trabalhos" title="trabalhos">Trabalhos</a></li>
+
+
+                    </ul>
+                </div>
+                <!--Col Footer 1-->
+                <div class="colfooter">
+
+                    <h3 class="titleFooter">Meus Contato</h3>
+                    <br><br>
+                    <p><i class="icon icon-instagram"></i>@nathan_vp2005</p>
+                    <br>
+                    <p><i class="icon icon-mail"></i>nathanvargaspl@gmail.com</p>
+                    <br>
+                    <p><i class="icon icon-phone"></i>(51) 98433-8220</p>
+                    <br>
+                    <p><i class="icon icon-whatsapp"></i>(51) 98433-8220</p>
+                </div>
+                <!--Col Footer 2-->
+                <div class="colfooter">
+
+                    <h3 class="titleFooter">Redes Sociais</h3>
+                    <br><br>
+                    <a href="" class="botao"><span><img src="" alt="">
+                            <i class="fa-brands fa-facebook" style="color: #ff0000;"></i>
+                            <i class=""></i>
+                        </span></a>
+
+                    <a href="" class="botao"><span><img src="" alt="">
+                            <i class="fa-brands fa-instagram" style="color: #ff0000;"></i>
+                            <i class=""></i>
+                        </span></a>
+                    <br>
+                    <a href="" class="botao"><span><img src="" alt="">
+                            <i class="fa-brands fa-whatsapp" style="color: #ff0000;"></i>
+                            <i class=""></i>
+                        </span></a>
+
+                    <a href="#" class="botao"><span><img src="" alt="">
+                            <i class="fa-brands fa-github" style="color: #ff0000;"></i>
+                            <i class=""></i>
+
+                        </span></a>
+                </div>
+                <!--Col Footer 3-->
+                <div class="clear"></div>
+
+            </div>
+            <!--Contant-->
+            <div class="main_footer_copy">
+
+
+                <p class="by"><i class="icon icon-heart-3"></i> Planejado e desenvolvido por<a href="#"
+                        title="Seu nome"> Nathan Vargas P.L. &#931;</a></p>
+
+            </div>
+</body>
+
+</html>
